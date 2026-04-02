@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Virtuals AI Platform">
-    <meta property="og:description" content="Explore AI Agents di Virtuals.io">
-    <meta property="og:image" content="https://i.imgur.com/ZSmUl7E.jpeg">
+    <meta property="og:title" content="Virtuals Mini App">
+    <meta property="og:description" content="AI Agents langsung di Farcaster">
+    <meta property="og:image" content="https://i.imgur.com/ZSmUl7E.jpeg"> <!-- ganti nanti dengan logo modern kita -->
     <meta property="og:url" content="https://virtuals-frame.vercel.app/">
     <meta property="og:type" content="website">
 
@@ -17,8 +17,8 @@
 
     <!-- Farcaster Frame -->
     <meta property="fc:frame" content="vNext">
-    <meta property="fc:frame:image" content="https://i.imgur.com/ZSmUl7E.jpeg">
-    <meta property="fc:frame:button:1" content="🚀 Open Virtuals">
+    <meta property="fc:frame:image" content="https://i.imgur.com/ZSmUl7E.jpeg"> <!-- ganti dengan logo modern -->
+    <meta property="fc:frame:button:1" content="🚀 Explore AI Agents">
     <meta property="fc:frame:button:1:action" content="link">
     <meta property="fc:frame:button:1:target" content="https://app.virtuals.io/">
     
@@ -39,46 +39,49 @@
             overflow: hidden;
         }
         .container {
-            max-width: 600px;
+            max-width: 420px;
             padding: 2rem;
         }
+        .logo {
+            width: 180px;
+            margin-bottom: 1.5rem;
+        }
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 600;
-            margin: 0 0 1rem 0;
+            margin: 0 0 0.5rem 0;
             background: linear-gradient(90deg, #00ff9d, #00b8ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            margin: 0 0 2rem 0;
+            font-size: 1.25rem;
+            opacity: 0.85;
+            margin-bottom: 2rem;
         }
         .button {
             display: inline-block;
             background: linear-gradient(90deg, #00ff9d, #00b8ff);
             color: #000;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            padding: 16px 40px;
+            padding: 16px 36px;
             border-radius: 9999px;
             text-decoration: none;
             box-shadow: 0 10px 30px rgba(0, 255, 157, 0.3);
-            transition: all 0.3s ease;
-        }
-        .button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0, 255, 157, 0.4);
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- GANTI SRC INI DENGAN LOGO MODERN KITA -->
+        <img src="https://i.imgur.com/ZSmUl7E.jpeg" alt="Virtuals Logo" class="logo">
+        
         <h1>Virtuals Mini App</h1>
-        <p>🚀 Explore AI Agents di Virtuals.io</p>
+        <p>AI Agents langsung di Farcaster</p>
+        
         <a href="https://app.virtuals.io/" target="_blank" class="button">
-            🚀 Open Virtuals
+            🚀 Explore AI Agents
         </a>
     </div>
 </body>
