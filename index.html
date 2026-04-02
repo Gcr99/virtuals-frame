@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Open Graph -->
+    <!-- Farcaster Mini App (vNext) -->
+    <meta name="fc:frame" content='{
+        "version": "next",
+        "imageUrl": "https://i.imgur.com/ZSmUl7E.jpeg",
+        "button": {
+            "title": "🚀 Buka Virtuals",
+            "action": {
+                "type": "launch_frame",
+                "name": "Virtuals Mini App",
+                "url": "https://app.virtuals.io/",
+                "splashImageUrl": "https://i.imgur.com/ZSmUl7E.jpeg",
+                "splashBackgroundColor": "#0a0a0a"
+            }
+        }
+    }'>
+
+    <!-- Open Graph (tetap dibutuhkan) -->
     <meta property="og:title" content="Virtuals Mini App">
     <meta property="og:description" content="AI Agents langsung di Farcaster">
-    <meta property="og:image" content="https://i.imgur.com/oQuVjX8.jpeg"> 
+    <meta property="og:image" content="https://i.imgur.com/ZSmUl7E.jpeg">
     <meta property="og:url" content="https://virtuals-frame.vercel.app/">
-    <meta property="og:type" content="website">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Farcaster Frame -->
-    <meta property="fc:frame" content="vNext">
-    <meta property="fc:frame:image" content="https://i.imgur.com/oQuVjX8.jpeg"> 
-    <meta property="fc:frame:button:1" content="🚀 Explore AI Agents">
-    <meta property="fc:frame:button:1:action" content="link">
-    <meta property="fc:frame:button:1:target" content="https://app.virtuals.io/">
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-        
         body {
             margin: 0;
             padding: 0;
@@ -36,20 +40,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            overflow: hidden;
         }
         .container {
             max-width: 420px;
             padding: 2rem;
         }
-        .logo {
+        img.logo {
             width: 180px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         h1 {
             font-size: 2.8rem;
             font-weight: 600;
-            margin: 0 0 0.5rem 0;
             background: linear-gradient(90deg, #00ff9d, #00b8ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -57,32 +59,14 @@
         p {
             font-size: 1.25rem;
             opacity: 0.85;
-            margin-bottom: 2rem;
-        }
-        .button {
-            display: inline-block;
-            background: linear-gradient(90deg, #00ff9d, #00b8ff);
-            color: #000;
-            font-size: 1.3rem;
-            font-weight: 600;
-            padding: 16px 36px;
-            border-radius: 9999px;
-            text-decoration: none;
-            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.3);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        
-        <img src="https://i.imgur.com/oQuVjX8.jpeg" alt="Virtuals Logo" class="logo">
-        
+        <img src="https://i.imgur.com/ZSmUl7E.jpeg" alt="Virtuals Logo" class="logo">
         <h1>Virtuals Mini App</h1>
         <p>AI Agents langsung di Farcaster</p>
-        
-        <a href="https://app.virtuals.io/" target="_blank" class="button">
-            🚀 Explore AI Agents
-        </a>
     </div>
 </body>
 </html>
